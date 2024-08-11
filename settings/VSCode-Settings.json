@@ -91,7 +91,7 @@
   "code-runner.ignoreSelection": true,
   "code-runner.saveFileBeforeRun": true,
   "code-runner.executorMap": {
-    "python": "\"$pythonPath\" -u $fullFileName"
+    "python": "python3 -u $file"
   },
   "code-runner.enableAppInsights": false,
 
@@ -119,5 +119,6 @@
   },
 
   // SQL Tools settings
-  "sqltools.useNodeRuntime": true
+  "sqltools.useNodeRuntime": true,
+  "python.defaultInterpreterPath": "/Users/rodolfolopez/.local/share/virtualenvs/pythonscripts-RMrhLpSI"
 }
