@@ -120,5 +120,5 @@
 
   // SQL Tools settings
   "sqltools.useNodeRuntime": true,
-  "python.defaultInterpreterPath": "/Users/rodolfolopez/.local/share/virtualenvs/pythonscripts-RMrhLpSI"
+  "python.defaultInterpreterPath": "/usr/local/bin/python3"
 }

@@ -84,5 +84,10 @@
     "key": "cmd+k cmd+f",
     "command": "workbench.action.closeFolder",
     "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "deleteInsideWord",
+    "when": "textInputFocus"
   }
 ]

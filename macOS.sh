@@ -11,7 +11,7 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Set the default Finder window location to the Documents folder
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Documents"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 
 # Apply changes by restarting Finder
 killall Finder
