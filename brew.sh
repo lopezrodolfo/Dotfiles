@@ -6,11 +6,12 @@ if ! command -v brew &>/dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     # Attempt to set up Homebrew PATH automatically for this session
-    if [ -x "/opt/homebrew/bin/brew" ]; then
-        # For Apple Silicon Macs
-        echo "Configuring Homebrew in PATH for Apple Silicon Mac..."
-        export PATH="/opt/homebrew/bin:$PATH"
+    if [ -x "/usr/local/bin/brew" ]; then
+        # For Intel Macs
+        echo "Configuring Homebrew in PATH for Intel Mac..."
+        export PATH="/usr/local/bin:$PATH"
     fi
+
 else
     echo "Homebrew is already installed."
 fi
@@ -31,12 +32,16 @@ brew cleanup
 packages=(
     "python"
     "python-tk"
+    "pipenv"
     "zsh"
     "git"
+    "gh"
     "tree"
     "pylint"
     "black"
     "node"
+    "gcc"
+    "java"
 )
 
 # Loop over the array to install each application.
@@ -65,6 +70,9 @@ if [ "$SHELL" != "$BREW_ZSH" ]; then
 else
     echo "Homebrew zsh is already the default shell. Skipping configuration."
 fi
+
+# Create a symbolic link for the OpenJDK installation
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 # Git config name
 current_name=$($(brew --prefix)/bin/git config --global --get user.name)
@@ -96,6 +104,10 @@ apps=(
     "google-chrome"
     "visual-studio-code"
     "rectangle"
+    "folx"
+    "iina"
+    "tor-browser"
+    "tunnelbear"
 )
 
 # Loop over the array to install each application.
@@ -157,4 +169,7 @@ echo "Open Rectangle and give it necessary permissions. Press enter to continue.
 read
 
 echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
+read
+
+echo "Sign in to TunnelBear. Press enter to continue..."
 read

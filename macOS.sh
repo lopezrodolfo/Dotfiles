@@ -17,7 +17,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 killall Finder
 
 echo "Customize finder tool bar to only show view and search (Finder -> View -> Customize Toolbar...)"
-echo "Remove recents from favorites and add Macintosh HD to locations"
+echo "Remove recents from favorites, add Home to favorites, and add Macintosh HD to locations"
 echo "Change all directories to column view"
 echo "Press enter to continue..."
 read
@@ -49,10 +49,6 @@ defaults write com.apple.Siri StatusMenuVisible -bool false
 # Enable Battery Percentage Display (not working)
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
-# Set location for screenshots
-mkdir "${HOME}/Desktop/Screenshots"
-defaults write com.apple.screencapture location "${HOME}/Desktop/Screenshots"
-
 # Restart SystemUIServer to apply changes
 killall SystemUIServer
 
@@ -61,6 +57,10 @@ defaults write com.apple.dock autohide -bool true
 
 # Turn off "Show recent applications in Dock"
 defaults write com.apple.dock show-recents -bool false
+
+echo "Remove apps from dock and adjust dock size (Settings -> Desktop and Dock)"
+echo "Press enter to continue..."
+read
 
 # Apply changes by restarting the Dock
 killall Dock

@@ -1,12 +1,13 @@
 #!/usr/bin/env zsh
 
 # Check if Homebrew's bin exists and if it's not already in the PATH
-if [ -x "/opt/homebrew/bin/brew" ] && [[ ":$PATH:" != *":/opt/homebrew/bin:"* ]]; then
-    export PATH="/opt/homebrew/bin:$PATH"
+if [ -x "/usr/local/bin/brew" ] && [[ ":$PATH:" != *":/usr/local/bin:"* ]]; then
+    export PATH="/usr/local/bin:$PATH"
 fi
 
 # Install VS Code Extensions
 extensions=(
+    github.copilot
     esbenp.prettier-vscode
     formulahendry.code-runner
     foxundermoon.shell-format
@@ -21,6 +22,9 @@ extensions=(
     mtxr.sqltools-driver-sqlite
     teabyii.ayu
     tomoki1207.pdf
+    ms-vscode.live-server
+    ms-vscode.cpptools-extension-pack
+    vscjava.vscode-java-pack
 )
 
 # Get a list of all currently installed extensions.
