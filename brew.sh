@@ -41,6 +41,7 @@ packages=(
     "black"
     "node"
     "gcc"
+    "gdb"
     "java"
 )
 
@@ -103,6 +104,7 @@ $(brew --prefix)/bin/npm install --global prettier
 apps=(
     "google-chrome"
     "visual-studio-code"
+    "cursor"
     "rectangle"
     "folx"
     "iina"

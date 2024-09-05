@@ -60,3 +60,8 @@ code .
 echo "Login to extensions (Copilot, etc) within VS Code."
 echo "Press enter to continue..."
 read
+
+# Manually open Cursor to sign-in
+echo "Login to Cursor, set up cursor command, and migrate VS Code settings."
+echo "Press enter to continue..."
+read

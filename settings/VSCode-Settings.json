@@ -91,8 +91,11 @@
   "code-runner.showExecutionMessage": false,
   "code-runner.ignoreSelection": true,
   "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
-    "python": "python3 -u $file"
+    "python": "python3 -u $file",
+    "cpp": "cd $dir && g++ -std=c++11 *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "java": "cd $dir && javac $fileName && java $classPath $fileNameWithoutExt"
   },
   "code-runner.enableAppInsights": false,
 
