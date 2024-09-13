@@ -9,3 +9,6 @@ export PATH="$PATH:/usr/local/opt/openjdk/bin"
 
 # Set CPPFLAGS for OpenJDK
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+# Add BasicTeX to the PATH
+export PATH="/Library/TeX/texbin:$PATH"

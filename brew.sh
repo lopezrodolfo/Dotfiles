@@ -110,7 +110,12 @@ apps=(
     "iina"
     "tor-browser"
     "tunnelbear"
+    "basictex"
 )
+
+# Needed for basictex
+# sudo tlmgr update --self
+# sudo tlmgr install latexmk
 
 # Loop over the array to install each application.
 for app in "${apps[@]}"; do

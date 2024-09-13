@@ -25,6 +25,7 @@ extensions=(
     ms-vscode.live-server
     ms-vscode.cpptools-extension-pack
     vscjava.vscode-java-pack
+    james-yu.latex-workshop
 )
 
 # Get a list of all currently installed extensions.
