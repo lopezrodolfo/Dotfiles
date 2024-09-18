@@ -40,4 +40,4 @@ alias update_brew='brew update; brew upgrade; brew upgrade --cask; brew cleanup'
 alias clean="osascript -e 'tell application \"Finder\" to empty the trash'; rm -rf ~/Downloads/*"
 
 # GitHub Copilot CLI
-eval "$(gh copilot alias -- zsh)"
+# eval "$(gh copilot alias -- zsh)"

@@ -7,7 +7,6 @@ fi
 
 # Install VS Code Extensions
 extensions=(
-    github.copilot
     esbenp.prettier-vscode
     formulahendry.code-runner
     foxundermoon.shell-format
@@ -26,6 +25,8 @@ extensions=(
     ms-vscode.cpptools-extension-pack
     vscjava.vscode-java-pack
     james-yu.latex-workshop
+    leanprover.lean4
+    #github.copilot
 )
 
 # Get a list of all currently installed extensions.
@@ -58,7 +59,7 @@ fi
 
 # Open VS Code to sign-in to extensions
 code .
-echo "Login to extensions (Copilot, etc) within VS Code."
+echo "Login to extensions within VS Code."
 echo "Press enter to continue..."
 read
 

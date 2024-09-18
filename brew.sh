@@ -35,7 +35,6 @@ packages=(
     "pipenv"
     "zsh"
     "git"
-    "gh"
     "tree"
     "pylint"
     "black"
@@ -43,7 +42,11 @@ packages=(
     "gcc"
     "gdb"
     "java"
+    #"gh"
 )
+
+# Create a symbolic link for the OpenJDK installation
+# sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 # Loop over the array to install each application.
 for package in "${packages[@]}"; do
@@ -71,9 +74,6 @@ if [ "$SHELL" != "$BREW_ZSH" ]; then
 else
     echo "Homebrew zsh is already the default shell. Skipping configuration."
 fi
-
-# Create a symbolic link for the OpenJDK installation
-sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 # Git config name
 current_name=$($(brew --prefix)/bin/git config --global --get user.name)
@@ -116,6 +116,9 @@ apps=(
 # Needed for basictex
 # sudo tlmgr update --self
 # sudo tlmgr install latexmk
+
+# Install Elan for Lean prover
+# curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
 
 # Loop over the array to install each application.
 for app in "${apps[@]}"; do

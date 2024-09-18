@@ -3,19 +3,6 @@
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "window.zoomLevel": 0,
-
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "editor.quickSuggestions": {
-    "comments": "off",
-    "strings": "off",
-    "other": "on"
-  },
   "editor.lightbulb.enabled": "off",
   "editor.suggestOnTriggerCharacters": true,
   "editor.parameterHints.enabled": false,
@@ -66,6 +53,21 @@
   "editor.quickSuggestionsDelay": 100,
   "editor.minimap.enabled": false,
   "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+
+  /*
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "on"
+  },
+  */
 
   // Zen Mode settings
   "zenMode.centerLayout": false,
