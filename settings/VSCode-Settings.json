@@ -1,4 +1,5 @@
 {
+  // General settings
   "editor.fontSize": 16,
   "debug.console.fontSize": 16,
   "terminal.integrated.fontSize": 16,
@@ -35,8 +36,6 @@
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
   "editor.acceptSuggestionOnEnter": "off",
-
-  // General settings
   "workbench.colorTheme": "Predawn",
   "workbench.iconTheme": "ayu",
   "editor.fontFamily": "Source Code Pro",
@@ -74,6 +73,19 @@
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
 
+  // Code Runner settings
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "python": "python3 -u $file",
+    "cpp": "cd $dir && g++ -std=c++11 *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "java": "cd $dir && javac $fileName && java $classPath $fileNameWithoutExt"
+  },
+  "code-runner.enableAppInsights": false,
+
   // Python settings
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -88,19 +100,6 @@
   "pylint.args": ["--disable=C0114,C0115,C0116,C0103,C0301,W0621,W0718,W1203"],
   "pylint.importStrategy": "fromEnvironment",
 
-  // Code Runner settings
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.showExecutionMessage": false,
-  "code-runner.ignoreSelection": true,
-  "code-runner.saveFileBeforeRun": true,
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "python": "python3 -u $file",
-    "cpp": "cd $dir && g++ -std=c++11 *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "java": "cd $dir && javac $fileName && java $classPath $fileNameWithoutExt"
-  },
-  "code-runner.enableAppInsights": false,
-
   // Plaintext settings
   "[plaintext]": {
     "editor.quickSuggestions": {
@@ -114,14 +113,18 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+
+  // .env settings
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+
+  // gitignore settings
   "[ignore]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
 
-  // Notebook settings
+  // Jupyter Notebook settings
   "notebook.output.scrolling": true,
   "notebook.formatOnSave.enabled": true,
   "notebook.lineNumbers": "on",
