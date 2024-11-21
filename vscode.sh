@@ -25,7 +25,7 @@ extensions=(
     ms-vscode.cpptools-extension-pack
     vscjava.vscode-java-pack
     james-yu.latex-workshop
-    leanprover.lean4
+    #leanprover.lean4
     #github.copilot
 )
 
