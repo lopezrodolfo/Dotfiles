@@ -1,13 +1,13 @@
 #!/usr/bin/env zsh
 ############################
-# This script creates symlinks from the home directory to any desired dotfiles in $HOME/dotfiles
+# This script creates symlinks from the home directory to any desired dotfiles in $HOME/Dotfiles
 # And also installs MacOS Software
 # And also installs Homebrew Packages and Casks (Apps)
 # And also sets up VS Code
 ############################
 
 # dotfiles directory
-dotfiledir="${HOME}/dotfiles"
+dotfiledir="${HOME}/Dotfiles"
 
 # list of files/folders to symlink in ${homedir}
 files=(zshrc zprofile zprompt aliases private)
