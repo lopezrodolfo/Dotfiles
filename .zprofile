@@ -14,4 +14,4 @@ export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export PATH="/Library/TeX/texbin:$PATH"
 
 # Add elan (lean prover) to the PATH (last)
-export PATH="$HOME/.elan/bin:$PATH"
+# export PATH="$HOME/.elan/bin:$PATH"
