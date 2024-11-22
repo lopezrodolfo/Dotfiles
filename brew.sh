@@ -108,9 +108,9 @@ apps=(
     "cursor"
     "rectangle"
     "tunnelbear"
-    "folx"
     "iina"
     "zoom"
+    #"folx"
     #"basictex"
 )
 
