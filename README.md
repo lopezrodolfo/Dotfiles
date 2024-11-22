@@ -15,12 +15,12 @@ Summer 2024
 1. Clone this repository:
 
    ```
-   git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+   git clone https://github.com/yourusername/Dotfiles.git ~/Dotfiles
    ```
 
 2. Run the installation script:
    ```
-   cd ~/dotfiles
+   cd ~/Dotfiles
    ./install.sh
    ```
 
