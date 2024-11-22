@@ -103,14 +103,15 @@ $(brew --prefix)/bin/npm install --global prettier
 # Define an array of applications to install using Homebrew Cask.
 apps=(
     "google-chrome"
+    "tor-browser"
     "visual-studio-code"
     "cursor"
     "rectangle"
+    "tunnelbear"
     "folx"
     "iina"
-    "tor-browser"
-    "tunnelbear"
-    "basictex"
+    "zoom"
+    #"basictex"
 )
 
 # Needed for basictex

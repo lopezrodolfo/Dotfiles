@@ -6,10 +6,10 @@ echo "Complete the installation of Xcode Command Line Tools before proceeding."
 echo "Press enter to continue..."
 read
 
-# Set scroll as traditional instead of natural
+# Set scroll as traditional instead of natural (not working)
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
-# Set the default Finder window location to the Documents folder
+# Set the default Finder window location to the Home folder
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 
@@ -52,24 +52,32 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # Restart SystemUIServer to apply changes
 killall SystemUIServer
 
+echo "Only show battery percentage, wifi, control center, date, time"
+echo "Press enter to continue..."
+read
+
 # Turn on "Automatically hide and show the Dock"
 defaults write com.apple.dock autohide -bool true
 
 # Turn off "Show recent applications in Dock"
 defaults write com.apple.dock show-recents -bool false
 
+# Apply changes by restarting the Dock
+killall Dock
+
 echo "Remove apps from dock and adjust dock size (Settings -> Desktop and Dock)"
 echo "Press enter to continue..."
 read
-
-# Apply changes by restarting the Dock
-killall Dock
 
 # Set the Touch Bar to show the Expanded Control Strip by default
 defaults write com.apple.touchbar.agent PresentationModeGlobal -string "fullControlStrip"
 
 # Apply the changes (restart the Touch Bar agent)
 killall ControlStrip
+
+echo "Customize touchbar with brightness, keyboard brightness, play, volume, night shift, focus, sleep, screensaver"
+echo "Press enter to continue..."
+read
 
 # Set desktop background image
 osascript <<EOD

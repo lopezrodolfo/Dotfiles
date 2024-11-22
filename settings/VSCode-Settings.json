@@ -45,7 +45,6 @@
   "workbench.settings.openDefaultSettings": true,
   "workbench.settings.useSplitJSON": true,
   "workbench.settings.editor": "json",
-  "workbench.startupEditor": "none",
   "editor.tabSize": 4,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -134,5 +133,6 @@
   },
 
   // SQL Tools settings
-  "sqltools.useNodeRuntime": true
+  "sqltools.useNodeRuntime": true,
+  "workbench.startupEditor": "none"
 }
