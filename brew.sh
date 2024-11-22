@@ -183,4 +183,5 @@ echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleCon
 read
 
 echo "Sign in to TunnelBear. Press enter to continue..."
+echo "Give TunnelBear VPN permissions (System Settings -> Privacy)"
 read
